@@ -2,7 +2,7 @@
 
 ---
 
-## 🌐 Online Environment
+## Online Environment
 
 Run notebooks directly in your browser — **no installation required**:
 
@@ -10,7 +10,7 @@ Run notebooks directly in your browser — **no installation required**:
 
 ---
 
-## 🖥️ Recommended Downloads (IDEs & Tools)
+## Recommended Downloads (IDEs & Tools)
 
 Local development environments for Python:
 
@@ -21,7 +21,7 @@ Local development environments for Python:
 
 ---
 
-## 📚 Installation Guides
+## Installation Guides
 
 - **Visual Studio Code**
 
@@ -36,4 +36,14 @@ Local development environments for Python:
     [![PyCharm Setup](https://img.shields.io/badge/PyCharm_Setup-21D789?style=for-the-badge&logo=pycharm&logoColor=white)](doc/Pycharm-Setup-pt.md)
 
 ---
+## Assessment
+
+| Component     | Date       | Weight |
+|---------------|------------|--------|
+| Ames Project  | 06-03-2024 | 15%    |
+| Theory Test   | 18-05-2024 | 35%    |
+| Final Project | 08-06-2026 | 50%    |
+
+---
+Updated on: 2024-02-16
 
