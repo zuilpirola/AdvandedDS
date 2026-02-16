@@ -85,7 +85,7 @@ Example exploratory steps:
 
 ## Summary Table
 
-Above is a summary table of all variables in the dataset, including counts, missing value percentages, unique value counts for categorical variables, means for numerical variables, and data types. This table serves as a reference for understanding the dataset's structure and guiding subsequent analysis.
+Below is a summary table of all variables in the dataset, including counts, missing value percentages, unique value counts for categorical variables, means for numerical variables, and data types. This table serves as a reference for understanding the dataset's structure and guiding subsequent analysis.
 
 **Table 1 — Summary of Ames Housing Dataset Variables**
 
@@ -186,24 +186,36 @@ Explaining all columns in table 1:
 - **int**: Percentage of entries that are of type int.
 - **str**: Percentage of entries that are of type string.
 
-The code to generate this table is included in 
+The code to generate this table is included in [notebook](https://github.com/zuilpirola/AdvandedDS/tree/main/Week1/notebooks) and is designed to be reproducible, following the course's principles.
+
 ---
 
 ## Initial Analysis
 
 Several preliminary insights can be drawn:
 
-1. **SalePrice variability**
-   The target variable typically shows right skewness, suggesting potential transformation (e.g., log scale) for modeling stability.
+1. Order vs PID identifiers
+Both Order and PID act as unique identifiers for properties, but they may serve different purposes. Order likely represents a sequential index, while PID may be a more complex property identifier containing additional information such as location or classification. Dataset documentation is needed for confirmation.
 
-2. **Quality indicators matter**
-   Variables like OverallQual consistently show strong relationships with price, making them important predictors.
+2. Lot Frontage meaning
+Lot Frontage represents the linear feet of street connected to the property. It is a numerical variable describing how much street exposure a property has.
 
-3. **Missing data is often meaningful**
-   Missing garage or alley information may indicate absence rather than data collection error. This supports the course principle that missing values must be explained before treatment.
+3. Lot Area interpretation
+Lot Area measures the total lot size in square feet. This numerical feature reflects property land size and can influence valuation.
 
-4. **Feature engineering opportunities**
-   Derived variables such as PriceTier introduce classification possibilities and encourage thinking beyond raw regression targets.
+4. Street access types
+The Street variable indicates the type of road access to a property. The dataset typically includes Grvl (gravel road access) and Pave (paved road access).
+
+5. Alley access categories
+Similar to street access, Alley describes alley access type. Values like Grvl and Pave indicate gravel or paved alleys, while missing values often represent no alley access.
+
+6. Difference between Street and Alley
+Street refers to the primary road access to the property, whereas Alley describes secondary rear or side access. While street access usually has fewer categories, alley access may include an explicit absence (NA).
+
+8. Missing value patterns
+Several variables exhibit significant missingness (e.g., Alley, Pool QC, Fence). Understanding the reasons for missing values is crucial. For instance, missing Pool QC likely indicates no pool, while missing Alley may indicate no alley access. These patterns must be documented and interpreted rather than simply imputed.
+
+...
 
 ---
 
