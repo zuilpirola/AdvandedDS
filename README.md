@@ -40,7 +40,7 @@ Local development environments for Python:
 
 | Component     | Date       | Weight |
 |---------------|------------|--------|
-| Ames Project  | 03-04-2024 | 15%    |
+| Ames Project  | 05-04-2024 | 15%    |
 | Theory Test   | 27-04-2024 | 35%    |
 | Final Project | 08-06-2026 | 50%    |
 
